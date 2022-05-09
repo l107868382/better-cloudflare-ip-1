@@ -47,7 +47,7 @@ o) 提供影视、软件和应用等下载服务的网站。
 
 请下载Release版本使用,不要使用Git Clone下载(会出现乱码)
 
-点击下载[Windows版本](https://proxy.freecdn.workers.dev/?url=https://github.com/badafans/better-cloudflare-ip/releases/latest/download/batch.zip)
+点击下载[Windows版本](https://proxy.freecdn.ml/?url=https://github.com/badafans/better-cloudflare-ip/releases/latest/download/batch.zip)
 
 ## Linux版本
 
@@ -56,7 +56,7 @@ o) 提供影视、软件和应用等下载服务的网站。
 目前已经测试 Termux、OpenWrt、Ubuntu、Debian、CentOS、MacOS、Raspbian、Armbian
 
 ``` bash
-curl https://proxy.freecdn.workers.dev/?url=https://raw.githubusercontent.com/badafans/better-cloudflare-ip/master/shell/cf.sh -o cf.sh && chmod +x cf.sh && ./cf.sh
+curl https://proxy.freecdn.ml/?url=https://raw.githubusercontent.com/badafans/better-cloudflare-ip/master/shell/cf.sh -o cf.sh && chmod +x cf.sh && ./cf.sh
 ```
 
 ## 引用声明
