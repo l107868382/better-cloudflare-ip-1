@@ -60,7 +60,7 @@ do
 	do
 		if [ $t -le 5 ]
 		then
-			curl --resolve www.cloudflare.com:443:$ip https://www.cloudflare.com/cdn-cgi/trace -o /dev/null -s --connect-timeout 1 -w "$ip"_%{time_connect}_"HTTP"%{http_code}"\n">>rtt/$1-$n.log
+			curl --resolve www.cloudflare.com:443:$ip https://www.cloudflare.com/cdn-cgi/trace -o /dev/null -s --connect-timeout 1 --max-time 2 -w "$ip"_%{time_connect}_"HTTP"%{http_code}"\n">>rtt/$1-$n.log
 			t=$[$t+1]
 		else
 			getrtt=$(grep HTTP200 rtt/$1-$n.log | wc -l)
